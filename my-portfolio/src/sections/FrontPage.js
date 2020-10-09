@@ -2,15 +2,17 @@ import React from 'react'
 import styled from 'styled-components';
 
 const StyledFrontPage = styled.section`
-
+margin-bottom: 250px;
+padding-top:7%;
 
 h1 {
     color: #E55E38;
-    font-size: 50px;
+    font-size: 66px;
+    margin:0;
 }
 h3 {
     color:  #07090F ;
-
+    font-size:20px;
 }
 .line {
     color:#353746 
@@ -18,17 +20,19 @@ h3 {
 p{
     color:#353746 ;
     font-size:20px;
-    margin-bottom: 400px;
+    
+    width:500px
 }
+
 `
 
 
 
-function FrontPage () {
+function FrontPage ({opacity}) {
  
     return(
 
-        <StyledFrontPage>
+        <StyledFrontPage style={{opacity}}>
         <h3>Hello, my name is</h3>
         <h1> Dustin Scroggins.</h1>
         <h1 className={'line'}>I express myself through the Web.</h1>

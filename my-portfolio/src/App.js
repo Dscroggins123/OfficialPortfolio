@@ -1,15 +1,30 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import FrontPage from './sections/FrontPage'
 import AboutMe from './sections/AboutMe'
+import Skills from "./sections/Skills"
 import "./App.css"
+import Nav from "./components/Navi"
+
 
 
 
 function App() {
+  const [scroll, setScroll] = useState('');
+  useEffect(()=> {
+    window.addEventListener("scroll", ()=> {
+      setScroll(window.scrollY)
+    })
+  }, [])
+
+  useEffect(()=> console.log(scroll), [scroll])
   return (
     <div>
-    <FrontPage/>
-    <AboutMe/>
+     <Nav/>
+    <div className="container">
+    <FrontPage opacity={(1-((scroll>450 ? 450 : scroll)/450))**.5}/>
+    <AboutMe />
+    <Skills/>
+    </div>
     </div>
   );
 }

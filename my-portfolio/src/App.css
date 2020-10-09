@@ -1,6 +1,13 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color:#F0F7F4;
+    margin: 0!important;
+}
+.container {
+    width: 850px;
+    margin-left: 15%;
     
-    margin-left: 20%;
-    padding-top: 10%;
 }
