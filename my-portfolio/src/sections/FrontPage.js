@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 
 const StyledFrontPage = styled.section`
-margin-bottom: 250px;
-padding-top:7%;
+margin-bottom: 200px;
+padding-top:8%;
 
 h1 {
     color: #E55E38;

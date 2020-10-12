@@ -7,16 +7,17 @@ import Grid from '@material-ui/core/Grid';
 const StyledAboutMe = styled.div`
 
 width:750px;
-margin-left:30px;
-height: 100vh;
+margin-left:40px;
+height: 90vh;
 padding-top:50px;
 
 
 h3 {
     color:#353746;
-    font-size:27px
+    font-size:27px;
 }
 p{
+    
     font-size:20px
 }
 
@@ -36,7 +37,7 @@ function AboutMe ( ){
 return(
 
    <StyledAboutMe id="about">
-       <h3><span style={{fontSize:'21px',color:'#E55E38'}}>I. &nbsp;</span> About Me</h3>
+       <h3> <span style={{fontSize:'21px',color:'#E55E38'}}>I. &nbsp;</span> About Me</h3>
        <Grid container spacing={3} >
         <Grid item sm={8} >
             <p>Hi, I'm Dustin Scroggins a Software Developer based in 
@@ -48,6 +49,7 @@ return(
             </p>
             <p>When I'm not improving my coding skills or learning new frameworks , I enjoy releasing my stress lifting heavy weights, 
                 watching sports and building my investment portfolio.</p>
+                
            
         </Grid> 
         <Grid item sm={4} >

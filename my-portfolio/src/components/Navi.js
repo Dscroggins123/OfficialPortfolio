@@ -37,8 +37,8 @@ export default function ButtonAppBar() {
             Dustin Scroggins
           </Typography>
           <a href="#about" ><Button color="black"><span>I. &nbsp;</span>About</Button></a>
-          <a href="#skills" ><Button color="black" ><span>II. &nbsp;</span>Skills</Button></a>
-          <Button color="black" ><span>III. &nbsp;</span>Projects</Button>
+          <a href="#skills" ><Button color="black" ><span>II. &nbsp;</span>Skills</Button> </a>
+          <a href="#projects" ><Button color="black" ><span>III. &nbsp;</span>Projects</Button> </a>
           <Button color="black" ><span>IV. &nbsp;</span>Contact</Button>
         </Toolbar>
       </AppBar>
