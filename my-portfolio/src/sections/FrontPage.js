@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const StyledFrontPage = styled.section`
 margin-bottom: 200px;
 padding-top:8%;
+width:850px;
 
 h1 {
     color: #E55E38;

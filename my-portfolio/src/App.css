@@ -7,7 +7,23 @@ body {
     margin: 0!important;
 }
 .container {
-    width: 850px;
-    margin-left: 15%;
+    width: 1000px;
+    margin-left: 225px;
     
 }
+Button:hover {
+ color:#E55E38;
+ 
+ 
+}
+img{
+    filter: grayscale(80%);
+  }
+img:hover {
+    filter: grayscale(0);
+    
+}
+
+
+   
+

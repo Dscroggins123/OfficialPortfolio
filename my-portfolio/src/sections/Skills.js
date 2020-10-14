@@ -20,7 +20,7 @@ import npm from '../800px-Npm-logo.svg.png'
 
 const StyledSkills = styled.div`
 padding-top:2%;
-width:800px;
+width:100%;
 height: 100vh;
 
 
