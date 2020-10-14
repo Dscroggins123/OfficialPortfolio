@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import FrontPage from './sections/FrontPage'
 import AboutMe from './sections/AboutMe'
 import Skills from "./sections/Skills"
-import Project from "./sections/Project/index"
+import Project from "./sections/Project/"
 import "./App.css"
 import Nav from "./components/Navi"
 

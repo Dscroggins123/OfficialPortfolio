@@ -5,7 +5,7 @@ import Project3 from "./Screen Shot 2020-10-12 at 2.00.57 AM.png"
 
 const StyledProjects = styled.div`
 height:100vh;
-padding-top:2%;
+
 width:100%;
 
 
@@ -88,10 +88,10 @@ return (
 <h3 className="sectionName"><span style={{fontSize:'21px',color:'#E55E38',}}>III. &nbsp;</span> Projects I've Built</h3>
 
 <Grid container  style={{paddingTop:'2%'}}>
- <Grid item sm={6}>
+ <Grid item sm={6} xs={12} >
  <img src={Project3} />
  </Grid>
- <Grid item sm={6} className='projectContent'>
+ <Grid item sm={6} xs={12}  className='projectContent'>
  <p style={{fontSize:'17px',marginBottom:'0%' ,color:'#E55E38'}}> Featured Project</p>
  <h3 style={{fontSize:'24px',marginTop:'5px'}}> Muse eXchange </h3>
  <div style={{marginRight:'50px'}} > 
@@ -107,9 +107,9 @@ return (
 
  </Grid>
  
- <Grid item sm={6} className='projectContentLeft' >
+ <Grid item sm={6} xs={12}  className='projectContentLeft' >
  <p style={{fontSize:'17px',marginBottom:'0%' ,color:'#E55E38'}}> Featured Project</p>
- <h3 style={{fontSize:'24px',marginTop:'5px'}}> Muse eXchange </h3>
+ <h3 style={{fontSize:'24px',marginTop:'5px'}}> DreamQuest </h3>
  <div className='productLeft'> 
   <p > A music marketplace where users leverage their talents to make money by selling their music or time in the form of tutorials. 
       Sign Up and explore different talents or upload your own products and see the sales come in!  </p>   
@@ -122,16 +122,16 @@ return (
 </ul>
 
  </Grid>
- <Grid item sm={6} style={{marginBottom:'100px'}}>
+ <Grid item sm={6} xs={12}  style={{marginBottom:'100px'}}>
     
  <img src={Project3} />
  
  </Grid>
 
- <Grid item sm={6}>
+ <Grid item sm={6} xs={12} >
  <img src={Project3} />
  </Grid>
- <Grid item sm={6} className='projectContent'>
+ <Grid item sm={6} xs={12}  className='projectContent'>
  <p style={{fontSize:'17px',marginBottom:'0%' ,color:'#E55E38'}}> Featured Project</p>
  <h3 style={{fontSize:'24px',marginTop:'5px'}}> Muse eXchange </h3>
  <div style={{marginRight:'50px'}} > 

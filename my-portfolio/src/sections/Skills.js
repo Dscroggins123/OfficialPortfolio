@@ -59,44 +59,44 @@ function Skills() {
 
 return (
     <StyledSkills id="skills">
+           
         <h3><span style={{fontSize:'21px',color:'#E55E38',}}>II. &nbsp;</span> Skills</h3>
         <p className="skilldescription"> In a fast paced industry I pride myself on my constant pursuit of more knowledge and my ability to process information quickly.
            </p>
-           
         <Grid container className="container"style={{paddingTop:'20px'}}>
-        <Grid item sm={12} ><p className="tech"> Technologies I've worked with </p></Grid>
-            <Grid item sm={4} className="skills" >
+        <Grid item xs={12} ><p className="tech"> Technologies I've worked with </p></Grid>
+            <Grid item sm={4} xs={6}  className="skills" >
                 <img src={html}  height="70px" width="70px"/>
              </Grid>
-            <Grid item sm={4} className="skills" >
+            <Grid item sm={4} xs={6} className="skills" >
             <img src={css}  height="70px" width="70px"/>
             </Grid>
-            <Grid item sm={4} className="skills" >
+            <Grid item sm={4} xs={6} className="skills" >
             <img src={javascript}  height="70px" width="70px"/>
             </Grid>
-            <Grid item sm={4} className="skills" >
+            <Grid item sm={4} xs={6} className="skills" >
                 <img src={JQuery}  height="70px" width="70px"/>
              </Grid>
-            <Grid item sm={4} className="skills" >
+            <Grid item sm={4} xs={6} className="skills" >
             <img src={react}  height="70px" width="70px"/>
             </Grid>
-            <Grid item sm={4} className="skills" >
+            <Grid item sm={4} xs={6} className="skills" >
             <img src={node}  height="70px" width="70px"/>
-            </Grid><Grid item sm={4} className="skills" >
+            </Grid><Grid item sm={4} xs={6} className="skills" >
                 <img src={mongodb}  height="70px" width="70px"/>
              </Grid>
-            <Grid item sm={4} className="skills" >
+            <Grid item sm={4} xs={6} className="skills" >
             <img src={mysql}  height="70px" width="70px"/>
             </Grid>
-            <Grid item sm={4} className="skills" >
+            <Grid item sm={4} xs={6} className="skills" >
             <img src={bootstraplogo}  height="70px" width="70px"/>
             </Grid>
-            <Grid item sm={4} className="skills" >
+            <Grid item sm={4} xs={6} className="skills" >
             <img src={materialize}  height="70px" width="70px"/>
-            </Grid><Grid item sm={4} className="skills" >
+            </Grid><Grid item sm={4} xs={6} className="skills" >
                 <img src={npm}  height="70px" width="70px"/>
              </Grid>
-            <Grid item sm={4} className="skills" >
+            <Grid item sm={4} xs={6} className="skills" >
             <a href="https://github.com/Dscroggins123" target="blank"><img src={github}  height="70px" width="70px"/></a>
             </Grid>
 

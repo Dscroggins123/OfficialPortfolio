@@ -15,7 +15,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   AppBar: {
-    background: "transparent"
+    background: "transparent",
+    boxShadow:'none',
+    paddingTop:'20px'
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -24,22 +26,28 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     color: "black"
   },
+  Button: {
+    marginRight:'10px'
+  },
+  link: {
+    textDecoration:'none'
+  }
 }));
 
 export default function ButtonAppBar() {
   const classes = useStyles();
 
   return (
-      <AppBar className={classes.AppBar} position="static" >
+      <AppBar className={classes.AppBar}  position="static" >
         <Toolbar>
           
           <Typography variant="h5" className={classes.title}>
             Dustin Scroggins
           </Typography>
-          <a href="#about" ><Button color="black"><span>I. &nbsp;</span>About</Button></a>
-          <a href="#skills" ><Button color="black" ><span>II. &nbsp;</span>Skills</Button> </a>
-          <a href="#projects" ><Button color="black" ><span>III. &nbsp;</span>Projects</Button> </a>
-          <Button color="black" ><span>IV. &nbsp;</span>Contact</Button>
+          <a href="#about"className={classes.link} ><Button color="black" className={classes.Button}><span style={{color:'#E55E38'}}>I. &nbsp;</span>About</Button></a>
+          <a href="#skills" className={classes.link}><Button color="black" className={classes.Button}><span style={{color:'#E55E38'}}>II. &nbsp;</span>Skills</Button> </a>
+          <a href="#projects" className={classes.link}><Button color="black" className={classes.Button}><span style={{color:'#E55E38'}}>III. &nbsp;</span>Projects</Button> </a>
+          <Button color="black" className={classes.Button} ><span style={{color:'#E55E38'}}>IV. &nbsp;</span>Contact</Button>
         </Toolbar>
       </AppBar>
   );
