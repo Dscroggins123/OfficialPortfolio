@@ -29,13 +29,16 @@ img:hover {
 
 
 @media screen and (max-width: 740px) {
-    
-    .container {
+
+.container {
         width: 100%;
         margin: 0 auto;
-        padding: 80px 0;
+        padding: 60px 0;
         max-height: 100%;
-    }
+        
+ }
+
+
   }
   @media screen and (max-width: 980px) {
     
@@ -46,6 +49,7 @@ img:hover {
         align-items: center;
         box-sizing: border-box;
         max-height: 100%;
+        
         
     }
   }
@@ -60,7 +64,7 @@ img:hover {
         padding: 40px 0;
         align-items: center;
         box-sizing: border-box;
-       
+        
         
     }
   }
@@ -73,7 +77,7 @@ img:hover {
         padding: 100px 0;
         max-height: 100%;
 
-      
+       
         
     }
     #hero{

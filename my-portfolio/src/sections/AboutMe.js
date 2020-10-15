@@ -21,6 +21,7 @@ padding-top:50px;
 h3 {
     color:#353746;
     font-size:27px;
+    font-size: clamp(24px, 4vw, 30px);
 }
 p{
     

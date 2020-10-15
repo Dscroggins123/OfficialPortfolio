@@ -5,10 +5,15 @@ import Grid from '@material-ui/core/Grid';
 const StyledFrontPage = styled.section`
 margin-bottom: 200px;
 padding-top:8%;
-width:850px;
+width:100%;
 @media screen and (max-width: 740px) {
-width:100%;  
-}
+    
+width:100%;
+ 
+
+
+}  
+
 p{
     width:500px
 }
@@ -17,8 +22,9 @@ p{
   }
 h1 {
     color: #E55E38;
-    font-size: 66px;
+    font-size: clamp(45px,7vw, 80px);
     margin:0;
+    width:85%
 }
 h3 {
     color:  #07090F ;
