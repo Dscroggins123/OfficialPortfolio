@@ -28,10 +28,7 @@ height: 100vh;
    
     margin-bottom:225px;
     
-.container{
-        width:100%;
-        margin-left:50px;
-    }   
+
     
 
       }

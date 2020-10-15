@@ -7,12 +7,15 @@ body {
     margin: 0!important;
 }
 .container {
-    width: 1000px;
+    
     margin-left: 225px;
+    
+    max-width: 1000px;
     
 }
 Button:hover {
  color:#E55E38;
+ transform: translateY(-3px);
  
  
 }
@@ -23,30 +26,66 @@ img:hover {
     filter: grayscale(0);
     
 }
+
+
 @media screen and (max-width: 740px) {
     
     .container {
         width: 100%;
-        margin: 5px;
+        margin: 0 auto;
         padding: 80px 0;
+        max-height: 100%;
     }
   }
   @media screen and (max-width: 980px) {
     
     .container {
         width: 100%;
-        margin: 5px;
-        padding: 80px 0;
+        margin: 0 auto;
+        padding: 60px 0;
+        align-items: center;
+        box-sizing: border-box;
+        max-height: 100%;
+        
     }
   }
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-height: 500px) {
+    .container{max-height: 100%;}
+    #about {
+        margin-bottom: 200px;
+    }
+    #skills {
+        width: 100%;
+        margin-bottom: 450px;
+        padding: 40px 0;
+        align-items: center;
+        box-sizing: border-box;
+       
+        
+    }
+  }
+  @media screen and (max-width: 1080px) {
     
     .container {
         width: 100%;
-        margin: 5px;
-        padding: 80px 0;
+        margin: 0 auto;
+        
+        padding: 100px 0;
+        max-height: 100%;
+
+      
+        
     }
+    #hero{
+        margin-left: 20x;
+        padding-top: 0;
+        
+    }
+    
+          
+    
   }
+  
   
 
 

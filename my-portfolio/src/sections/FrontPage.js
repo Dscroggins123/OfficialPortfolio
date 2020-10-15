@@ -8,8 +8,9 @@ padding-top:8%;
 width:850px;
 @media screen and (max-width: 740px) {
 width:100%;  
+}
 p{
-    width:500%
+    width:500px
 }
 
     
@@ -41,7 +42,7 @@ function FrontPage ({opacity}) {
  
     return(
 
-        <StyledFrontPage style={{opacity}}>
+        <StyledFrontPage style={{opacity}} id="hero" >
         <Grid container >
             <Grid item xs={12}>
         <h3>Hello, my name is</h3>

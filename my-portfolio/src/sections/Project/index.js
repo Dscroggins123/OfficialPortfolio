@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useState,useEffect} from 'react'
 import styled from 'styled-components';
 import Grid from '@material-ui/core/Grid';
 import Project3 from "./Screen Shot 2020-10-12 at 2.00.57 AM.png"
 import Project2 from "./Screen Shot 2020-10-14 at 5.17.40 PM.png"
+import ExtraProjects from "../ExtraProjects"
 
 const StyledProjects = styled.div`
 height:100vh;
@@ -110,6 +111,18 @@ li{
 
 function Project (){
 
+    const [show, setShow] = useState(false)
+    const [text, setText] = useState('Show More Projects')
+    const handleClose = () => {
+        setText("Show More Projects")
+        setShow(false)};
+    const handleShow = () => {
+        setText("Show Less Projects")
+        setShow(true)
+    };
+console.log(show)
+
+
 
 return (
 <StyledProjects id="projects" >
@@ -177,8 +190,9 @@ return (
  </Grid>
 
 </Grid>
- <button> More Projects</button>
 
+ <button onClick={show? handleClose:handleShow} >{text} </button>
+<ExtraProjects state={show}  />
 </StyledProjects>
 
 
