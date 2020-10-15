@@ -23,6 +23,19 @@ padding-top:2%;
 width:100%;
 height: 100vh;
 
+@media screen and (max-width: 740px) {
+    width:100%;  
+   
+    margin-bottom:225px;
+    
+.container{
+        width:100%;
+        margin-left:50px;
+    }   
+    
+
+      }
+
 
 h3 {
     color:#353746;
@@ -32,8 +45,9 @@ h3 {
 .skilldescription{
     text-align:center;
     font-size:18px;
-    width:600px;
-    margin-left:140px
+    width:60%;
+    margin-left:20%;
+    
 
 }
 

@@ -10,6 +10,12 @@ width:750px;
 margin-left:40px;
 height: 90vh;
 padding-top:50px;
+@media screen and (max-width: 740px) {
+    width:100%;  
+    
+    margin:5px;
+        
+      }
 
 
 h3 {
@@ -39,7 +45,7 @@ return(
    <StyledAboutMe id="about">
        <h3> <span style={{fontSize:'21px',color:'#E55E38'}}>I. &nbsp;</span> About Me</h3>
        <Grid container spacing={3} >
-        <Grid item sm={8} >
+        <Grid item xs={12} md={8} >
             <p>Hi, I'm Dustin Scroggins a Software Developer based in 
                 Moreno Valley, CA</p>
             <p>I find joy experiementing with technologies to build things
@@ -52,7 +58,7 @@ return(
                 
            
         </Grid> 
-        <Grid item sm={4} >
+        <Grid item xs={12} md={4} >
             <p>HYUH DSHOSJD DSOIDSSD SODSI</p>
             <p>hdffdbifddfbjkdfddofbdfobfd</p>
         </Grid>     
