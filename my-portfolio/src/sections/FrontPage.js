@@ -1,6 +1,7 @@
-import React from 'react'
-import styled from 'styled-components';
-import Grid from '@material-ui/core/Grid';
+import React, { useRef, useEffect } from "react";
+import styled from "styled-components";
+import Grid from "@material-ui/core/Grid";
+import { gsap } from "gsap";
 
 const StyledFrontPage = styled.section`
 margin-bottom: 200px;
@@ -40,35 +41,47 @@ p{
     width:500px
 }
 
-`
+`;
+
+function FrontPage() {
+
+    const heroRef = useRef(null);
+
+    useEffect(() => {
+        gsap.fromTo(heroRef.current,{
+            x:-1200,
+           
+        },{
+            x:0,
+            
+            delay:1
+            
+           
+           
+
+        })
+        
+    }, [])
 
 
 
-function FrontPage ({opacity}) {
- 
-    return(
-
-        <StyledFrontPage style={{opacity}} id="hero" >
-        <Grid container >
-            <Grid item xs={12}>
-        <h3>Hello, my name is</h3>
-        <h1> Dustin Scroggins.</h1>
-        <h1 className={'line'}>I express myself through the Web.</h1>
-        <p> I'm a software developer, from the Golden State(CA) with a passion for building websites that feature user friendly functionality, visually appealing design, and everything in between.</p>
-            </Grid>     
+  return (
+    <StyledFrontPage id="hero">
+      <Grid container>
+        <Grid item xs={12} ref={heroRef} >
+          <h3>Hello, my name is</h3>
+          <h1> Dustin Scroggins.</h1>
+          <h1 className={"line"}>I express myself through the Web.</h1>
+          <p>
+            {" "}
+            I'm a software developer, from the Golden State(CA) with a passion
+            for building websites that feature user friendly functionality,
+            visually appealing design, and everything in between.
+          </p>
         </Grid>
-        </StyledFrontPage>
-
-
-
-
-
-
-    )
-
-
-
-
+      </Grid>
+    </StyledFrontPage>
+  );
 }
 
-export default FrontPage
+export default FrontPage;

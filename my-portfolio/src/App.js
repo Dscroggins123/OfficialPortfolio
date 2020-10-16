@@ -22,7 +22,7 @@ function App() {
     <div>
      <Nav/>
     <div className="container">
-    <FrontPage opacity={(1-((scroll>450 ? 450 : scroll)/450))**.5}/>
+    <FrontPage />
     <AboutMe />
     <Skills/>
     <Project/>

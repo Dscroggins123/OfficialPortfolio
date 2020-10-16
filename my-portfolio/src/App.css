@@ -16,16 +16,26 @@ body {
 Button:hover {
  color:#E55E38;
  transform: translateY(-3px);
+ transition: transform 300ms ease-in-out;
  
- 
-}
+ }
+
 img{
     filter: grayscale(80%);
   }
 img:hover {
     filter: grayscale(0);
     
+    
 }
+#extra:hover{
+        transform: translateY(-10px);
+        transition: transform 300ms ease-in-out;
+    }
+
+
+    
+   
 
 
 @media screen and (max-width: 740px) {
@@ -34,9 +44,12 @@ img:hover {
         width: 100%;
         margin: 0 auto;
         padding: 60px 0;
-        max-height: 100%;
+        
+       
         
  }
+ 
+ 
 
 
   }
@@ -52,6 +65,7 @@ img:hover {
         
         
     }
+    
   }
   @media screen and (max-height: 500px) {
     .container{max-height: 100%;}
