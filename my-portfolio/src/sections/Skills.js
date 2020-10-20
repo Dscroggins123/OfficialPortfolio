@@ -47,6 +47,11 @@ const StyledSkills = styled.div`
   }
   .skills {
     margin-bottom: 10px;
+    
+  }
+  img{
+    border-radius:5px;
+    box-shadow: 0 10px 30px -15px #1b1e22;
   }
 `;
 

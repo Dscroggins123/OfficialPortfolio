@@ -42,6 +42,12 @@ const StyledProjects = styled.div`
     box-shadow: 0 10px 30px -15px #1b1e22;
     filter: grayscale(80%);
   }
+  img:hover {
+    filter: grayscale(0);
+    transform: translateY(-3px);
+    transition: transform 300ms ease-in-out;
+    
+  }
   .productDetail {
     width: 100%;
     background-color: #e4f1eb;

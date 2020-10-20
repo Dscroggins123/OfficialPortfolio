@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 
 const StyledFrontPage = styled.section`
 margin-bottom: 200px;
-padding-top:8%;
+padding-top:4%;
 width:100%;
 @media screen and (max-width: 740px) {
     
@@ -23,13 +23,14 @@ p{
   }
 h1 {
     color: #E55E38;
-    font-size: clamp(45px,7vw, 80px);
+    font-size: clamp(45px,8vw, 80px);
     margin:0;
-    width:85%
+    width:95%;
 }
 
 .line {
-    color:#353746 
+    color:#353746 ;
+    
 }
 p{
     color:#353746 ;

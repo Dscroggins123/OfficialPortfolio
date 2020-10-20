@@ -17,10 +17,10 @@ const useStyles = makeStyles((theme) => ({
   AppBar: {
     background: "transparent",
     boxShadow:'none',
-    paddingTop:'15px'
+    paddingTop:'5px'
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(1),
   },
   title: {
     flexGrow: 1,
@@ -42,7 +42,7 @@ export default function ButtonAppBar() {
         <Toolbar>
           
           <Typography variant="h5" className={classes.title}>
-            <img src={logo} style={{height:'150px',width:'150px'}}/>
+            <img src={logo} style={{height:'125px',width:'150px'}}/>
           </Typography>
           <a href="#about"className={classes.link} ><Button color="black" className={classes.Button}><span style={{color:'#E55E38'}}>I. &nbsp;</span>About</Button></a>
           <a href="#skills" className={classes.link}><Button color="black" className={classes.Button}><span style={{color:'#E55E38'}}>II. &nbsp;</span>Skills</Button> </a>
