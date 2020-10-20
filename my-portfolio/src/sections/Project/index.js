@@ -4,11 +4,14 @@ import Grid from "@material-ui/core/Grid";
 
 import Project3 from "./Screen Shot 2020-10-12 at 2.00.57 AM.png";
 import Project2 from "./Screen Shot 2020-10-14 at 5.17.40 PM.png";
-import ExtraProjects from "../ExtraProjects";
+import Project1 from "./Screen Shot 2020-10-19 at 10.01.42 PM.png"
+import weblink from "./img_216136.png"
+import github from "../../githubnew.png"
+
 
 const StyledProjects = styled.div`
-  height: 100vh;
-
+  
+  
   width: 100%;
   @media screen and (max-width: 980px) {
     background-color: yellow;
@@ -83,6 +86,9 @@ const StyledProjects = styled.div`
     text-align: -webkit-match-parent;
     margin: 0px 0px 5px 20px;
   }
+  a{
+    margin:10px;
+  }
 `;
 
 function Project() {
@@ -133,6 +139,10 @@ function Project() {
             <li>Node.js</li>
             <li>Express.js</li>
           </ul>
+          <div>
+           <a href="https://arcane-everglades-49918.herokuapp.com/" target="blank"><img src={weblink}style={{height:'20px',width:'20px'}} /></a>
+           <a href="https://github.com/nickgusd/Muse-eXchange" target="blank"><img src={github}style={{height:'20px',width:'20px'}} /></a>
+          </div>
         </Grid>
 
         <Grid item md={5} xs={12} className="projectContentLeft">
@@ -157,13 +167,17 @@ function Project() {
             <li>Node.js</li>
             <li>My SQL/Sequelize</li>
           </ul>
+          <div>
+           <a href="https://boiling-scrubland-47240.herokuapp.com" target="blank"><img src={weblink}style={{height:'20px',width:'20px'}} /></a>
+           <a href="https://github.com/BlakeQuake/Dream-Quest" target="blank"><img src={github}style={{height:'20px',width:'20px'}} /></a>
+          </div>
         </Grid>
         <Grid item md={7} xs={12} style={{ marginBottom: "100px" }}>
           <img src={Project2} />
         </Grid>
 
         <Grid item md={6} xs={12}>
-          <img src={Project3} />
+          <img src={Project1} />
         </Grid>
         <Grid item md={6} xs={12} className="projectContent">
           <p style={{ fontSize: "17px", marginBottom: "0%", color: "#E55E38" }}>
@@ -172,31 +186,26 @@ function Project() {
           </p>
           <h3 style={{ fontSize: "24px", marginTop: "5px" }}>
             {" "}
-            Muse eXchange{" "}
+            Village{" "}
           </h3>
           <div style={{ marginRight: "50px" }}>
             <p className="productDetail">
               {" "}
-              A music marketplace where users leverage their talents to make
-              money by selling their music or time in the form of tutorials.
-              Sign Up and explore different talents or upload your own products
-              and see the sales come in!{" "}
+              A community service app where users can search for good deeds to complete in their local area.{" "}
             </p>
           </div>
           <ul style={{ justifyContent: "flex-end" }}>
-            <li>React.js</li>
-            <li>MongoDB</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
+            <li>JQuery</li>
+            
+            <li>Javascript</li>
+            <li>GoogleMapAPI</li>
           </ul>
+          
         </Grid>
       
       
       </Grid>
-       <div style={{paddingTop:'10%'}}>
-        <h3 className="sectionName" style={{textAlign:"center"}} > Other Noteworthy Projects </h3>
-        <ExtraProjects />
-        </div>
+      
     </StyledProjects>
   );
 }

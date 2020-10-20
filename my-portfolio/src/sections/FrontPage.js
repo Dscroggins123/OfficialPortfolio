@@ -27,10 +27,7 @@ h1 {
     margin:0;
     width:85%
 }
-h3 {
-    color:  #07090F ;
-    font-size:20px;
-}
+
 .line {
     color:#353746 
 }
@@ -69,7 +66,7 @@ function FrontPage() {
     <StyledFrontPage id="hero">
       <Grid container>
         <Grid item xs={12} ref={heroRef} >
-          <h3>Hello, my name is</h3>
+          <p>Hello, my name is</p>
           <h1> Dustin Scroggins.</h1>
           <h1 className={"line"}>I express myself through the Web.</h1>
           <p>

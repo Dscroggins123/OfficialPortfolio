@@ -14,7 +14,8 @@ const useStyles = makeStyles({
     height: 300,
     float: "left",
     margin: 10,
-    textAlign:'left'
+    textAlign:'left',
+   
   },
 
   title: {
@@ -28,12 +29,21 @@ const useStyles = makeStyles({
     
   },
   
+  
 });
+const sectionName = {
+  
+    color: '#353746',
+    fontSize: '27px',
+    textAlign:"center"
+  
+}
 
 function ExtraProjects({ state }) {
   const classes = useStyles();
   return (
-    <div style={{ width: "100%", height: "100vh" }}>
+    <div style={{ width: "100%",paddingTop:"10%",height:'100vh'}}>
+      <h3 style={sectionName}  > Other Noteworthy Projects </h3>
       {otherProjects.map((project) => (
             <Card id="extra" className={classes.root}>
               <CardContent>

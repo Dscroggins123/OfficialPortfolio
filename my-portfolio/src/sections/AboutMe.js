@@ -47,7 +47,7 @@ return(
        <h3> <span style={{fontSize:'21px',color:'#E55E38'}}>I. &nbsp;</span> About Me</h3>
        <Grid container spacing={3} >
         <Grid item xs={12} md={8} >
-            <p>Hi, I'm Dustin Scroggins a Software Developer based in 
+            <p>Hi, I'm <span style={{color:'#E55E38'}}>Dustin Scroggins </span> a Software Developer based in 
                 Moreno Valley, CA</p>
             <p>I find joy experiementing with technologies to build things
                 that live on the internet, whether that be websites , applications or

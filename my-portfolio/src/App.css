@@ -6,6 +6,18 @@ body {
     background-color:#F0F7F4;
     margin: 0!important;
 }
+h1,h3,h5 {
+    font-family: 'Roboto', sans-serif;
+}
+p,Button{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 350;
+    
+}
+a{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 450;
+}
 .container {
     
     margin-left: 225px;
@@ -13,12 +25,19 @@ body {
     max-width: 1000px;
     
 }
-Button:hover {
+Button,i:hover {
+    
  color:#E55E38;
  transform: translateY(-3px);
  transition: transform 300ms ease-in-out;
  
  }
+ /* i:hover{
+    background-color:#E55E38;
+    background-size: cover;
+    transform: translateY(-3px);
+    transition: transform 300ms ease-in-out;   
+ } */
 
 img{
     filter: grayscale(80%);
@@ -32,6 +51,7 @@ img:hover {
         transform: translateY(-10px);
         transition: transform 300ms ease-in-out;
     }
+
 
 
     
