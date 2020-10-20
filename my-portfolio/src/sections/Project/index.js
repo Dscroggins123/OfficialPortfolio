@@ -14,13 +14,13 @@ const StyledProjects = styled.div`
   
   width: 100%;
   @media screen and (max-width: 980px) {
-    background-color: yellow;
+    
     margin: 5px;
   }
   @media screen and (max-width: 740px) {
     width: 90%;
     margin: 10px;
-    background-color: green;
+    
 
     p {
       text-align: left;
@@ -28,6 +28,7 @@ const StyledProjects = styled.div`
     h3 {
       text-align: left;
     }
+    
   }
 
   .sectionName {
@@ -39,6 +40,7 @@ const StyledProjects = styled.div`
     width: 575px;
     border-radius: 1%;
     box-shadow: 0 10px 30px -15px #1b1e22;
+    filter: grayscale(80%);
   }
   .productDetail {
     width: 100%;
@@ -200,7 +202,9 @@ function Project() {
             <li>Javascript</li>
             <li>GoogleMapAPI</li>
           </ul>
-          
+          <div>
+          <a href="https://github.com/scrunchyblue/Village_GP1" target="blank"><img src={github}style={{height:'20px',width:'20px'}} /></a>
+          </div>
         </Grid>
       
       

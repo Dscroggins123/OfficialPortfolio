@@ -46,7 +46,7 @@ function App() {
           autoAlpha: 1,
           ease: 'none',
           scrollTrigger: {
-              markers:true,
+              
               trigger: el,
               start: 'top center',
               end:'bottom',

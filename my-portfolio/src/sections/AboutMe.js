@@ -1,19 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
 import Grid from '@material-ui/core/Grid';
-
+import logo from '../components/again.png'
 
 
 const StyledAboutMe = styled.div`
 
 width:750px;
 margin-left:40px;
-height: 90vh;
+
+height: 100vh;
 padding-top:50px;
-@media screen and (max-width: 740px) {
-    width:100%;  
+
+@media screen and (max-width: 980px) {
+    width:70%;  
     
-    margin:5px;
+    margin-left:40px;
+   
+    
+    
         
       }
 
@@ -25,8 +30,15 @@ h3 {
 }
 p{
     
-    font-size:20px
+    font-size: clamp(16px, 2vw, 20px);
 }
+img{
+    width: clamp(400px, 300px, 600px);
+    height:clamp(400px, 300px, 600px);
+    
+}
+
+
 
 
 
@@ -45,8 +57,8 @@ return(
 
    <StyledAboutMe id="about">
        <h3> <span style={{fontSize:'21px',color:'#E55E38'}}>I. &nbsp;</span> About Me</h3>
-       <Grid container spacing={3} >
-        <Grid item xs={12} md={8} >
+       <Grid container  >
+        <Grid item xs={12} sm={8}  >
             <p>Hi, I'm <span style={{color:'#E55E38'}}>Dustin Scroggins </span> a Software Developer based in 
                 Moreno Valley, CA</p>
             <p>I find joy experiementing with technologies to build things
@@ -59,9 +71,8 @@ return(
                 
            
         </Grid> 
-        <Grid item xs={12} md={4} >
-            <p>HYUH DSHOSJD DSOIDSSD SODSI</p>
-            <p>hdffdbifddfbjkdfddofbdfobfd</p>
+        <Grid item xs={12} sm={4} >
+            <img src={logo}  />
         </Grid>     
 
 

@@ -6,6 +6,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { otherProjects } from "../../config";
+import weblink from "./img_216136.png"
 
 const useStyles = makeStyles({
   root: {
@@ -15,6 +16,7 @@ const useStyles = makeStyles({
     float: "left",
     margin: 10,
     textAlign:'left',
+    backgroundColor:'#E4F1EB'
    
   },
 
@@ -62,8 +64,8 @@ function ExtraProjects({ state }) {
                 </Typography>
               </CardContent>
               <CardActions>
-                <a href={project.url}>
-                  <Button size="small">Visit</Button>
+                <a href={project.url} target="blank">
+                <img src={weblink}style={{height:'30px',width:'30px'}} className='extralink' />
                 </a>
               </CardActions>
             </Card>

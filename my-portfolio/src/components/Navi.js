@@ -4,7 +4,8 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import logo from "../mine.png"
+import logo from "./again.png"
+
 
 
 
@@ -41,7 +42,7 @@ export default function ButtonAppBar() {
         <Toolbar>
           
           <Typography variant="h5" className={classes.title}>
-            <img src={logo} style={{height:'10px',width:'200px'}}/>
+            <img src={logo} style={{height:'150px',width:'150px'}}/>
           </Typography>
           <a href="#about"className={classes.link} ><Button color="black" className={classes.Button}><span style={{color:'#E55E38'}}>I. &nbsp;</span>About</Button></a>
           <a href="#skills" className={classes.link}><Button color="black" className={classes.Button}><span style={{color:'#E55E38'}}>II. &nbsp;</span>Skills</Button> </a>

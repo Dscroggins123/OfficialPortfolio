@@ -78,6 +78,7 @@ function FrontPage() {
         </Grid>
       </Grid>
     </StyledFrontPage>
+   
   );
 }
 

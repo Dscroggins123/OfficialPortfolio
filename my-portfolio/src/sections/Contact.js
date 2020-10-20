@@ -24,6 +24,12 @@ h1{
   addingTop:5px;
   position:absolute
 }
+i:hover {
+    
+  color:#E55E38;
+  transform: translateY(-3px);
+  transition: transform 300ms ease-in-out;
+  
 
 
 `
