@@ -100,17 +100,8 @@ const StyledProjects = styled.div`
 `;
 
 function Project() {
-  const [show, setShow] = useState(false);
-  const [text, setText] = useState("Show More Projects");
-  const handleClose = () => {
-    setText("Show More Projects");
-    setShow(false);
-  };
-  const handleShow = () => {
-    setText("Show Less Projects");
-    setShow(true);
-  };
-  console.log(show);
+  
+ 
 
   return (
     <StyledProjects id="projects">

@@ -17,8 +17,20 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const sections = [
-  <TopButton/> ,
+
+
+
+function App() {
+  const [scroll, setScroll] = useState('');
+  useEffect(()=> {
+    window.addEventListener("scroll", ()=> {
+      setScroll(window.scrollY)
+    })
+  }, [])
+
+  useEffect(()=> console.log(scroll), [scroll])
+ const sections = [
+  <TopButton scroll={scroll}/> ,
   <AboutMe/> ,
   <Skills/>,
   <Project/>,
@@ -27,10 +39,6 @@ const sections = [
   
   
 ]
-
-
-function App() {
- 
   const revealRefs = useRef([]);
     revealRefs.current = [];
  
@@ -41,6 +49,7 @@ function App() {
     };
     useEffect(() => {
       window.scrollTo(0, 0)
+   
     }, [])
   
 
@@ -50,9 +59,9 @@ function App() {
       gsap.fromTo(el, {
           autoAlpha: 0
       }, {
-          duration: 1,
+          
           autoAlpha: 1,
-          ease: 'none',
+         
           scrollTrigger: {
               
               trigger: el,

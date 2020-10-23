@@ -1,6 +1,7 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Top from './arrow.png'
 import styled from 'styled-components';
+import { gsap } from "gsap";
 
 
 
@@ -12,6 +13,7 @@ right: 0;
 top: 50%;
 width: 4em;
 margin-top: -2.5em;
+
 
 
 img{
@@ -28,14 +30,35 @@ a{
 `
 
 
-function TopButton () {
+function TopButton ({scroll}) {
     
+
+    useEffect(() => {
+        gsap.fromTo('#toggle',{
+            autoAlpha:0,
+           
+        },{
+            autoAlpha:1,
+            duration:2,
+            delay:1
+
+            
+           
+           
+
+        })
+        
+    }, [])
+
+
+
 return (
-    <StyledLink>
-    <a href="#hero" > 
+    <StyledLink >
+    {scroll > 700?
+    <a href="#hero" id="toggle"> 
         <img src={Top}/>
         
-    </a>
+    </a>: ''}
     </StyledLink>
 )
 
