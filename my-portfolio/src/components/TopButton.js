@@ -10,13 +10,18 @@ const StyledLink = styled.div`
 position: fixed;
 right: 0;
 top: 50%;
-width: 8em;
+width: 4em;
 margin-top: -2.5em;
 
 
 img{
     height:40px;
 width:40px;
+margin:0;
+}
+a{
+    text-decoration:none;
+    color:black;
 }
 
 
@@ -29,6 +34,7 @@ return (
     <StyledLink>
     <a href="#hero" > 
         <img src={Top}/>
+        
     </a>
     </StyledLink>
 )

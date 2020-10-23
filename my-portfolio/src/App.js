@@ -18,6 +18,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const sections = [
+  <TopButton/> ,
   <AboutMe/> ,
   <Skills/>,
   <Project/>,
@@ -68,7 +69,7 @@ function App() {
     
     <div>
      <Nav/>
-     <TopButton/>
+     
      
     <div className="container">
     <FrontPage />
@@ -76,7 +77,7 @@ function App() {
     {sections.map((section)=>(
       
     <div ref={addToRefs} >
-      
+     
     {section}
     </div>))
     }

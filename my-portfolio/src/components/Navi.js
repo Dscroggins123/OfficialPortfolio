@@ -12,7 +12,7 @@ import logo from "./again.png"
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    
   },
   AppBar: {
     background: "transparent",
@@ -39,7 +39,7 @@ export default function ButtonAppBar() {
   
 
   return (
-      <AppBar className={classes.AppBar}  position="static" >
+      <AppBar className={classes.AppBar}  position="static"  id="hero">
         <Toolbar>
           
           <Typography variant="h5" className={classes.title}>
