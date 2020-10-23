@@ -1,4 +1,5 @@
 import React, {useEffect, useState,useRef} from 'react';
+
 import FrontPage from './sections/FrontPage'
 import AboutMe from './sections/AboutMe'
 import Skills from "./sections/Skills"
@@ -6,6 +7,8 @@ import Project from "./sections/Project/"
 import ExtraProjects from "./sections/ExtraProjects";
 import Contact from "./sections/Contact"
 import Footer from "./components/Footer"
+import TopButton from "./components/TopButton"
+
 
 import "./App.css"
 import Nav from "./components/Navi"
@@ -35,7 +38,9 @@ function App() {
             revealRefs.current.push(section);
         }
     };
- 
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
   
 
   useEffect(() => {
@@ -60,19 +65,28 @@ function App() {
       
   }, [])
   return (
+    
     <div>
      <Nav/>
+     <TopButton/>
+     
     <div className="container">
     <FrontPage />
+    
     {sections.map((section)=>(
       
     <div ref={addToRefs} >
+      
     {section}
     </div>))
     }
+    
     </div>
-    <Footer/>
+   <Footer/>
     </div>
+    
+
+    
   );
 }
 

@@ -3,9 +3,10 @@ import Grid from "@material-ui/core/Grid";
 import styled from 'styled-components';
 import Button from '@material-ui/core/Button';
 
+
 const StyledContact = styled.div`
 padding-top:20%;
-height:100vh;
+height:70vh;
 width: 60%;
 display:block;
 margin-left:20%;
@@ -36,7 +37,7 @@ i:hover {
 
 function Contact() {
   return (
-      <StyledContact>
+      <StyledContact id="contact">
       <Grid container>
           <Grid item md={12} >
     <h3 style={{textAlign:"center",color:"#E55E38"}}>
@@ -52,7 +53,9 @@ function Contact() {
     </div>
     </Grid>
     </Grid>
-    </StyledContact>
+    
+    </StyledContact> 
+   
   );
 }
 

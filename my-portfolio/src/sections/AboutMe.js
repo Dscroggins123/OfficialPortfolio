@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import styled from 'styled-components';
 import Grid from '@material-ui/core/Grid';
 import logo from '../components/again.png'
@@ -51,6 +51,9 @@ img{
 
 
 function AboutMe ( ){
+    // useEffect(() => {
+    //     window.location('/about')
+    //   }, [])
 
 
 return(

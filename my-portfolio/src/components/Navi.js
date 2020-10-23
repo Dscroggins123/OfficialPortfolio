@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ButtonAppBar() {
   const classes = useStyles();
+  
 
   return (
       <AppBar className={classes.AppBar}  position="static" >
@@ -47,7 +48,7 @@ export default function ButtonAppBar() {
           <a href="#about"className={classes.link} ><Button color="black" className={classes.Button}><span style={{color:'#E55E38'}}>I. &nbsp;</span>About</Button></a>
           <a href="#skills" className={classes.link}><Button color="black" className={classes.Button}><span style={{color:'#E55E38'}}>II. &nbsp;</span>Skills</Button> </a>
           <a href="#projects" className={classes.link}><Button color="black" className={classes.Button}><span style={{color:'#E55E38'}}>III. &nbsp;</span>Projects</Button> </a>
-          <Button color="black" className={classes.Button} ><span style={{color:'#E55E38'}}>IV. &nbsp;</span>Contact</Button>
+          <a href="#contact" className={classes.link}><Button color="black" className={classes.Button} ><span style={{color:'#E55E38'}}>IV. &nbsp;</span>Contact</Button></a>
         </Toolbar>
       </AppBar>
   );
