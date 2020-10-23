@@ -2,14 +2,16 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import styled from 'styled-components';
 import Button from '@material-ui/core/Button';
+import Footer from "../components/Footer"
 
 
 const StyledContact = styled.div`
 padding-top:20%;
-height:70vh;
+height:65vh;
 width: 60%;
 display:block;
 margin-left:20%;
+margin-bottom:100px;
 
 h1{
   font-size: clamp(40px, 5vw, 60px);
@@ -53,6 +55,7 @@ function Contact() {
     </div>
     </Grid>
     </Grid>
+    <Footer/>
     
     </StyledContact> 
    

@@ -6,7 +6,7 @@ import Skills from "./sections/Skills"
 import Project from "./sections/Project/"
 import ExtraProjects from "./sections/ExtraProjects";
 import Contact from "./sections/Contact"
-import Footer from "./components/Footer"
+
 import TopButton from "./components/TopButton"
 
 
@@ -82,7 +82,7 @@ function App() {
     }
     
     </div>
-   <Footer/>
+
     </div>
     
 

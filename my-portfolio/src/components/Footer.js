@@ -2,7 +2,13 @@ import React from 'react'
 import styled from 'styled-components';
 
 
+
 const StyledFooter = styled.div`
+
+
+padding-top:50px;
+margin-top: 200px;
+ 
 a{
     text-decoration:none;
     color:black;
@@ -23,7 +29,7 @@ function Footer () {
 return(
 <StyledFooter>
  <footer>
-     <a href="https://github.com/Dscroggins123/OfficialPortfolio" target="blank" ><p>Made by Dustin Scroggins 2020</p></a>
+     <a href="https://github.com/Dscroggins123/OfficialPortfolio" target="blank" ><p>Built by Dustin Scroggins</p></a>
  </footer>
  </StyledFooter>
 
