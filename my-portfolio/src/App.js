@@ -5,6 +5,7 @@ import Skills from "./sections/Skills"
 import Project from "./sections/Project/"
 import ExtraProjects from "./sections/ExtraProjects";
 import Contact from "./sections/Contact"
+import Footer from "./components/Footer"
 
 import "./App.css"
 import Nav from "./components/Navi"
@@ -19,6 +20,7 @@ const sections = [
   <Project/>,
   <ExtraProjects/>,
   <Contact/>
+  
   
 ]
 
@@ -69,6 +71,7 @@ function App() {
     </div>))
     }
     </div>
+    <Footer/>
     </div>
   );
 }

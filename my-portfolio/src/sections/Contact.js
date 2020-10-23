@@ -45,7 +45,7 @@ function Contact() {
       </h3>
       <h1 style={{textAlign:"center",color: '#353746'}}> Get in Touch</h1>
     <p style={{textAlign:"center"}}> 
-        I'm currently in search for fulltime work as a FrontEnd Developer or freelance projects that may spark my interest. If you have any other question please dont hesitate to reach out to me, I look forward to speaking with you!
+        I'm currently in search for fulltime work as a FrontEnd Developer or freelance projects that may spark my interest. If you have any other questions please dont hesitate to reach out to me, I look forward to speaking with you!
     </p>
     <div className='contactbutton'>
     <a style={{color:'#353746'}} href="mailto:dscroggins123@gmail.com"><i className="large material-icons"  >mail</i></a>
