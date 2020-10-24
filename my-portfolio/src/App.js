@@ -59,9 +59,9 @@ function App() {
       gsap.fromTo(el, {
           autoAlpha: 0
       }, {
-          
+          delay: .5,
           autoAlpha: 1,
-         
+          ease: 'none',
           scrollTrigger: {
               
               trigger: el,

@@ -46,31 +46,33 @@ function FrontPage() {
     const heroRef = useRef(null);
 
     useEffect(() => {
-        gsap.fromTo(heroRef.current,{
-            x:-1200,
+        gsap.timeline().fromTo(heroRef.current,{
+            opacity:0,
            
         },{
-            x:0,
+            opacity:1,
             
-            delay:1
+            delay:.5
             
            
            
 
-        })
+        }).from('.name',{
+         y:-900
+        }).from(".line",{y:-900}).from(".info",{y:-900})
         
     }, [])
 
 
 
   return (
-    <StyledFrontPage id="hero">
+    <StyledFrontPage >
       <Grid container>
         <Grid item xs={12} ref={heroRef} >
           <p>Hello, my name is</p>
-          <h1> Dustin Scroggins.</h1>
+          <h1 className={"name"}> Dustin Scroggins.</h1>
           <h1 className={"line"}>I express myself through the Web.</h1>
-          <p>
+          <p className={'info'}>
             {" "}
             I'm a software developer, from the Golden State(CA) with a passion
             for building websites that feature user friendly functionality,
